@@ -1,0 +1,697 @@
+#include <stdio.h>
+#include <time.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <iostream>
+
+int instruct(int s)
+{ system ("color F1");
+	printf("\t\t\t\t ******      \n                       ****** INSTRUCTIONS ******\n                                 ******\n\n");
+getch();
+printf("  #   FIRST OF ALL ENTER YOUR NAME\n\n  #   THEN CHOOSE YOUR LEVEL.\n\n  #   THERE ARE THREE LEVELS (EASY, MEDIUM , HARD)\n\n  #   SELECT LEVEL ONLY BY NUMERIC KEYS (1,2,3)\n\n  #   FOR EVERY QUESTION THERE ARE FOUR OPTIONS.\n\n  #   ONLY USE NUMERIC KEYS (1,2,3,4) TO SELECT YOUR OPTION.\n\n  #   OTHER WISE YOUR ANSWER WILL BE CONSIDERED INCORRECT.\n\n  #   CHOOSE  CORRECT OPTIONS TO WIN THE CASH PRIZE.\n\n  #   IN EASY LEVEL YOU CAN WIN 5,00,000 BY ANSEWERING ALL QUESTIONS.\n\n  #   IN MEDIUM LEVEL YOU CAN WIN 10,000,00 BY ANSWERING ALL QUESTIONS.\n\n  #   IN HARD LEVEL YOU CAN WIN 15,000,00 BY ANSWERING ALL QUESTIONS.\n\n  #   YOU WILL GET THREE LIVES TO REMAIN IN THE GAME.\n\n  #   IF ANSWER WILL BE INCORRECT THE GAME WILL OVER AND YOU WILL GET NOTHING. \n\n\n\n");
+
+}
+
+
+
+
+int pag(int p){
+	system ("cls");
+printf("\n\n******************************************************************************************************************************************************************************************       PLAY AND GAIN       *******************************************************************************************************************************************************************************************\n\n\n\n\n");
+getch();
+}
+
+int main(){
+int s; int l,t; int r;int p; int k,w; int g;
+int x,y,a,m[100],i=0,u=0,z=0;
+int ans;
+char ch[7];
+	
+
+
+
+getch();
+for (w=0;w<=30;w++){///// colouring loop
+
+system ("color A3");
+system ("color B3");
+system ("color C3");
+
+system ("color D3");
+system ("color E3");
+system ("color F4");
+}
+printf("\n\t\t  \xB2\xB2\xB2\xB2\xB2   \xB2             \xB2       \xB2\xB2\xB2   \xB2\xB2\xB2");
+printf("\n\t\t \xB2     \xB2  \xB2            \xB2 \xB2       \xB2     \xB2");
+printf("\n\t\t \xB2     \xB2  \xB2           \xB2   \xB2      \xB2     \xB2");
+printf("\n\t\t \xB2\xB2\xB2\xB2\xB2\xB2   \xB2          \xB2\xB2\xB2\xB2\xB2\xB2\xB2     \xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+printf("\n\t\t \xB2        \xB2         \xB2       \xB2       \xB2");
+printf("\n\t\t \xB2        \xB2        \xB2         \xB2      \xB2");
+printf("\n\t\t\xB2\xB2\xB2       \xB2\xB2\xB2\xB2\xB2\xB2  \xB2\xB2\xB2       \xB2\xB2\xB2    \xB2\xB2\xB2");
+printf("\n\n");
+printf("\n\t\t      \xB2        \xB2     \xB2\xB2\xB2  \xB2\xB2\xB2\xB2\xB2\xB2");
+printf("\n\t\t     \xB2 \xB2       \xB2 \xB2    \xB2   \xB2     \xB2");
+printf("\n\t\t    \xB2   \xB2      \xB2  \xB2   \xB2   \xB2     \xB2");
+printf("\n\t\t   \xB2\xB2\xB2\xB2\xB2\xB2\xB2     \xB2   \xB2  \xB2   \xB2     \xB2");
+printf("\n\t\t  \xB2       \xB2    \xB2    \xB2 \xB2   \xB2     \xB2");
+printf("\n\t\t \xB2         \xB2   \xB2     \xB2\xB2   \xB2     \xB2");
+printf("\n\t\t\xB2\xB2\xB2       \xB2\xB2\xB2 \xB2\xB2\xB2     \xB2   \xB2\xB2\xB2\xB2\xB2\xB2");
+printf("\n\n");
+printf("\n\t\t \xB2\xB2\xB2\xB2\xB2        \xB2        \xB2\xB2\xB2  \xB2     \xB2\xB2\xB2");
+printf("\n\t\t\xB2            \xB2 \xB2        \xB2   \xB2 \xB2    \xB2");
+printf("\n\t\t\xB2           \xB2   \xB2       \xB2   \xB2  \xB2   \xB2");
+printf("\n\t\t\xB2  \xB2\xB2      \xB2\xB2\xB2\xB2\xB2\xB2\xB2      \xB2   \xB2   \xB2  \xB2");
+printf("\n\t\t\xB2    \xB2    \xB2       \xB2     \xB2   \xB2    \xB2 \xB2");
+printf("\n\t\t\xB2    \xB2   \xB2         \xB2    \xB2   \xB2     \xB2\xB2");
+printf("\n\t\t \xB2\xB2\xB2\xB2\xB2  \xB2\xB2\xB2       \xB2\xB2\xB2  \xB2\xB2\xB2 \xB2\xB2\xB2     \xB2");
+
+getch();
+system ("cls");
+instruct(s);
+
+
+
+getch();
+system("cls");
+system ("color F2");
+printf("   \n\n\tPLEASE SELECT LEVEL :      1) EASY\n\n                             \t   2) MEDIUM\n\n                          \t   3) HARD\n");
+scanf("%d",&k);
+system ("cls");
+
+system ("color F0");
+
+printf("\n\n\n\n\n\n\n\n   PLEASE ENTER YOUR NAME :    ");
+scanf("%s",&ch);
+system ("cls");
+
+
+if (k==2){  
+// medium level
+for (g=1;g<=3;g++){ /////////////////////lifes///////////////
+for (a=1;a<=3;a++)
+
+
+{ 
+
+				srand(time(0));
+	y=(rand()%14)+1;
+	m[a]=y;
+	for(i==0;i<a;i++){
+		if(y==m[i])
+		    u=1;
+			}
+if(u==0){
+
+		if(k==1){pag(p);
+	printf(" Q:   WHICH BIRD IS A MAMMEL ALSO?\n\n1) SPARROW\n\n2) HUMMING BIRD\n\n3) BAT\n\n4) DOVE\n");
+	scanf("%d", &ans);
+	if (ans==3)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color A0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }
+	}
+	if(y==2){pag(p);	printf("Q :     IN WHICH OF THE GAMES REFEREE OFFICIALLY WHISTLE ON THE FIELD?\n\n1) CRICKET\n\n2) FOOTBALL\n\n3) SNOKEER\n\n4) TABLE TENNIS\n");
+	scanf("%d",&ans);
+	if (ans==2)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color E0");
+	}	else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }
+}
+if(y==3){		pag(p);
+	printf( " In the phrase '24/7', if 24 stands for the number of hours, what does '7'stand for?\n\n1)YEAR\n\n2)MONTH\n\n3)DATE\n\n4)WEEK\n");
+	scanf("%d",&ans);
+			
+	if
+	(ans==4)
+{
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0");
+		}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+if(y==4){pag(p);
+printf("WHICH OF THE PLANET IS KNOWN AS 'MORNING STAR' ? \n\n1)  VENUS\n\n2)  MURCURY\n\n3)  MARS\n\n4)  SATURN\n ");
+   	scanf("%d",&ans);
+	   if(ans==1)
+	   { 	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");
+	   }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+if(y==5){pag(p);printf("HOW MANY TEETH ARE KNOWN AS MILK TEETH IN HUMAN BEINGS ? \n\n1)  20\n\n2)  32\n\n3)  14\n\n4)  10\n ");
+   	scanf("%d",&ans);
+	   if(ans==3) {
+	     	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color A0");                    }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+	
+	
+	if(y==6){pag(p);printf(" SNAKE BITE FIRST AFFECTS THE  ? \n\n1)  LUNGS\n\n2)  BLOOD CIRCULATION\n\n3)  BRAIN\n\n4)  NERVOUS SYSTEM\n  ");
+	scanf("%d",&ans);		
+		
+	if
+	(ans==2){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+	
+	
+	if(y==7){pag(p);printf("THE STEAM ENGINE WAS INVENTED BY   ? \n\n1)  JAMES WATT\n\n2)  ALBERT EINSTEIN  \n\n3)  THOMAS NEWCOMEN\n\n4)  ROMER  \n ");
+	scanf("%d",&ans);
+				
+	if
+	(ans==3){	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");}		else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }
+					}
+					
+					
+					
+	if(y==8){pag(p);printf("NIGHT VISION IS POSSIBLE WITH THE HELP OF  ? \n\n1)  INFRARED RAYS\n\n2)  RED LIGHT  \n\n3)  UV LIGHT\n\n4)  BLUE LIGHT  \n ");
+  	scanf("%d",&ans);
+  	
+	if
+	(ans==1){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+	
+	
+	if(y==9){pag(p);
+	printf(" Q:  Saint Patrick is the Patron Saint of which country? \n\n1)  SPAIN\n\n2)  JAPAN  \n\n3)  IRELAND\n\n4)  AMERICA  \n ");
+	scanf("%d", &ans);
+	if (ans==3)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color A0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+	
+	
+	
+	if(y==10){pag(p);	printf("Q :  Which Italian city is famous for its leaning tower?  \n\n1)  FLORIYA\n\n2)  PISA  \n\n3)  JOMANIA\n\n4)  TASKRO TOWN  \n ");
+	scanf("%d",&ans);
+	if (ans==2)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color E0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}	
+
+	
+	
+	
+	
+	if(y==11){		pag(p);
+	printf( "   How many wives did Henry VIII have?  \n\n1)  TWO\n\n2)  EIGHT  \n\n3) FIVE\n\n4)  SIX  \n ");
+	scanf("%d",&ans);
+			
+	if
+	(ans==4)
+{
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0");
+		}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+
+
+if(y==12){
+pag(p);printf("  What sweet food made by bees using nectar from flowers?\n\n1)  HONEY\n\n2)  SUGAR  \n\n3)  CHOCLATE\n\n4)  BROWN SUGAR  \n ");
+   	scanf("%d",&ans);
+	   if(ans==1)
+	   { 	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");
+	   }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+	
+	
+if(y==13){pag(p);
+printf("       What is the top colour in a rainbow?\n\n1)  BLUE\n\n2)  VIOLET\n\n3)  GREEN\n\n4)  RED\n");
+   	scanf("%d",&ans);
+	   if(ans==4) {
+	     	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color A0");                    }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+
+if(y==14){pag(p);
+printf(" How many years are there in a millennium?\n\n1)  10\n\n2)  100\n\n3)  1000\n\n4)  100000\n ");
+	scanf("%d",&ans);		
+		
+	if
+	(ans==3){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+	
+	
+	
+	
+	
+	
+	
+	if(y==15){pag(p);
+printf("    Name Batman's crime fighting partner? \n\n1)  SPIDERMAN\n\n2)  SUPERMAN  \n\n3)  ROBIN\n\n4)  FLASH    \n ");
+	scanf("%d",&ans);
+				
+	if
+	(ans==3){
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}		
+					
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+}u=0;
+getch();printf("             ~~~~~~~~ CONGRATULATION %s YOU WON RS 10,000,00 ~~~~~~~~",ch);
+
+
+
+
+}
+
+
+if (g==3){printf("                         \n\n\n\n\n                         ******* GAME OVER *******\n                         ");}
+}///lifes
+
+}
+
+
+if (k==1){  ////   easy level////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+for (g=1;g<=3;g++){ /////////////////////lifes////////////////
+
+
+
+for (a=1;a<=3;a++)
+
+
+{ 
+
+				srand(time(0));
+	y=(rand()%14)+1;
+	m[a]=y;
+	for(i==0;i<a;i++){
+		if(y==m[i])
+		    u=1;}
+if(u==0){
+
+		if(y==1){pag(p);
+		
+		
+	printf(" Q:  IN TOY STORY , WHAT WAS THE NAME OF COW BOY ?\n\n1) OGGY\n\n2) BUZZ LIGHT YEAR\n\n3) WODDY\n\n4) MR NOBODY\n");
+	scanf("%d", &ans);
+	if (ans==3)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color A0");
+ 			
+	}
+	else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch(); break;    }
+	}
+	if(y==2){pag(p);	printf("Q :   WHICH IS THE HEAVIEST METAL?\n\n1)  SILVER\n\n2)  GOLD\n\n3) SILVER\n\n4) STEEL\n");
+	scanf("%d",&ans);
+	if (ans==2)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color E0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }	
+}
+if(y==3){		pag(p);
+	printf( "  HOW MANY LEGS DO BUTTERLIES HAVE ?\n\n1)  5\n\n2)  4\n\n3)  7\n\n4)  6\n");
+	scanf("%d",&ans);
+			
+	if
+	(ans==4)
+{
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0");
+		}
+		
+		else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }
+		}
+if(y==4){pag(p);
+printf(" What famous scientist was awarded the 1921 Nobel Prize in Physics for his work on theoretical physics?\n\n1)  ALBERT EINSTEIN\n\n2)  ISSAC NEWTON\n\n3) MARKONI\n\n4) JAMES HARRY\n");
+   	scanf("%d",&ans);
+	   if(ans==1)
+	   { 	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");
+	   }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }}
+if(y==5){pag(p);printf("What is the name of the boy that visits the chocolate factory owned by Willy Wonka?\n\n1)  PETER\n\n2)  JOHNY\n\n3) SIMSON\n\n4)  ChHARLIE BUCKET\n");
+   	scanf("%d",&ans);
+	   if(ans==4) {
+	     	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color A0");                    }else {printf("             %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }}
+
+	
+	
+	if(y==6){pag(p);printf(" WHAT COLOUR ARE SMURFS  ? \n\n1)  RED\n\n2)  BLUE\n\n3)  BLACK\n\n4)  YELLOW\n ");
+	scanf("%d",&ans);		
+		
+	if
+	(ans==2){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }}
+	
+	
+	if(y==7){pag(p);printf(" NAME THE SCHOOL HARRY POTTER ATTENDED   ? \n\n1)  OXFORD\n\n2)  ALBERTA HIGH SCHOOL  \n\n3)  HOGWARTS\n\n4)  ROMINYA  \n ");
+	scanf("%d",&ans);
+				
+	if
+	(ans==3){	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }		
+					}
+					
+					
+					
+	if(y==8){pag(p);printf("    What is the name of the fairy in Peter Pan? \n\n1)  SONPARI\n\n2)    TINKERBELL  \n\n3)  DAISY\n\n4)    NATSIYA        \n ");
+  	scanf("%d",&ans);
+  	
+	if
+	(ans==2){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+	
+	
+	if(y==9){pag(p);
+	printf(" Q:     What is the distance around a circle called? ?\n\n1) AREA\n\n2) DIAMETER\n\n3) CIRCUMFERENCE\n\n4) TRIGONAL\n");
+	scanf("%d", &ans);
+	if (ans==3)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color A0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+	
+	
+	
+	if(y==10){pag(p);	printf("Q :    What is the name of the Australian stick or toy that is designed to come back to you when thrown?\n\n1)  SUPER STICK\n\n2)  BOMARANG\n\n3) FRISBI\n\n4) WODDY STICK\n");
+	scanf("%d",&ans);
+	if (ans==2)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color E0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }}	
+
+	
+	
+	
+	
+	if(y==11){		pag(p);
+	printf( "Which country can you see when directly looking over the sea from The White Cliffs of Dover? ?\n\n1)  PAKISTAN\n\n2)  AMERICA\n\n3)  CHINA\n\n4)  FRANCE\n");
+	scanf("%d",&ans);
+			
+	if
+	(ans==4)
+{
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0");
+		}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }}
+
+
+
+if(y==12){
+pag(p);printf(" What famous scientist was awarded the 1921 Nobel Prize in Physics for his work on theoretical physics?\n\n1)  ALBERT EINSTEIN\n\n2)  ISSAC NEWTON\n\n3) MARKONI\n\n4) JAMES HARRY\n");
+   	scanf("%d",&ans);
+	   if(ans==1)
+	   { 	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");
+	   }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }}
+
+	
+	
+if(y==13){pag(p);
+printf("    Which planet in our Solar System is known for having a ring?\n\n1)  SATURN\n\n2)  VENUS\n\n3)  PLUTO\n\n4)  JUPITER\n");
+   	scanf("%d",&ans);
+	   if(ans==1) {
+	     	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color A0");                    }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); break;    }}
+
+
+if(y==14){pag(p);
+printf(" Who does (the animated character) Princess Fiona marry?? \n\n1)  HULK\n\n2)  SHREK\n\n3)  GRU\n\n4)  BATMAN\n ");
+	scanf("%d",&ans);		
+		
+	if
+	(ans==2){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0"); getch();break;    }}
+	
+	
+	
+	
+	
+	
+	
+	if(y==15){pag(p);
+printf(" In which street does the British Prime Minister live? \n\n1)  WHITE STREET\n\n2)  LIBERTA STREET  \n\n3)  DOWING STREET\n\n4)  ROAMAN STREET    \n ");
+	scanf("%d",&ans);
+				
+	if
+	(ans==3){
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}		
+					
+
+	
+	
+	
+	
+	
+	
+	
+	
+}u=0;
+
+
+getch();
+
+printf("             ~~~~~~~~ CONGRATULATION %s YOU WON RS 5,000,00 ~~~~~~~~",ch);
+}
+
+
+
+
+if (g==3){printf("                         \n\n\n\n                         ******* GAME OVER *******\n                             ");}
+
+}
+
+
+}
+
+
+
+
+if (k==3){  ////   hard level/////////////////////////////////////////////////////////////////////
+
+for (g=1;g<=3;g++){ /////////////////////lifes////////////////
+
+for (a=1;a<=3;a++)
+
+
+{ 
+
+				srand(time(0));
+	y=(rand()%14)+1;
+	m[a]=y;
+	for(i==0;i<a;i++){
+		if(y==m[i])
+		    u=1;}
+if(u==0){
+
+		if(k==1){pag(p);
+	printf("    THE ELO SYSTEM IS USED TO RANK PLAYERS IN WHICH GAME ?\n\n1) FOOTBALL\n\n2) BASKETBALL\n\n3) CHESS\n\n4) CARDS\n");
+	scanf("%d", &ans);
+	if (ans==3)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color A0");
+	}
+else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }	}
+	if(y==2){pag(p);	printf("   WHAT COLOUR IS THE CENTRAL LINE ON A LONDON UNDERGROUND MAP?\n\n1) BLUE\n\n2) RED\n\n3) BLACK\n\n4) VIOLET\n");
+	scanf("%d",&ans);
+	if (ans==2)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color E0");
+	}	else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }
+}
+if(y==3){		pag(p);
+	printf( " IN WHICH PART OF THE BODY WOULD YOU FIND PONS?\n\n1)  ELBOW\n\n2)  LIVER\n\n3)  HEART\n\n4)  BRAIN\n");
+	scanf("%d",&ans);
+			
+	if
+	(ans==4)
+{
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0");
+		}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+if(y==4){pag(p);
+printf("WHAT KIND OF ANIMAL IS NAMED AFTER BOTANIST PETER PALLAS ? \n\n1)  CAT\n\n2)  DOG\n\n3)  TIGER\n\n4)  KANGROO\n ");
+   	scanf("%d",&ans);
+	   if(ans==1)
+	   { 	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");
+	   }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+if(y==5){pag(p);printf("WHAT DOES AN OOLOGIST STUDY ? \n\n1)  MAMMALS\n\n2)  REPTILES  \n\n3)  BIRDS EGGS\n\n4)  FISH GILLS\n ");
+   	scanf("%d",&ans);
+	   if(ans==3) {
+	     	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color A0");                    }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+	
+	
+	if(y==6){pag(p);printf("MALCOLM COOPER WAS ASSOCIATED WITH WHICH OLYPIC SPORT  ? \n\n1)  RACING\n\n2)  SHOOTING\n\n3)  LONG JUMP\n\n4)  SWIMMING\n ");
+	scanf("%d",&ans);		
+		
+	if
+	(ans==2){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+	
+	
+	if(y==7){pag(p);printf("WHAT IS FACTORIAL OF 6   ? \n\n1)  22\n\n2)  23  \n\n3)  21\n\n4)  24  \n");
+	scanf("%d",&ans);
+				
+	if
+	(ans==3){	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");}		
+					else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+					
+					
+					
+	if(y==8){pag(p);printf("  WHAT IS AN OCARINA ? \n\n1)  WIND INSTRUMENT\n\n2)  SOLAR CELLS  \n\n3)  LASER LIGHT\n\n4)  SCANNER  \n ");
+  	scanf("%d",&ans);
+  	
+	if
+	(ans==1){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+	
+	
+	if(y==9){pag(p);
+	printf(" Q: Who is the patron saint of Ireland?\n\n1) ST. ATLANTIC\n\n2) ST. VENDETA\n\n3) ST.BRITAINYA\n\n4) ST. PATRICK\n");
+	scanf("%d", &ans);
+	if (ans==4)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color A0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+	
+	
+	
+	if(y==10){pag(p);	printf("Q :  What is the name of Harry Potter's pet owl?\n\n1)  DAMRICA  \n\n2)  LEGOE\n\n3) FOSTRI\n\n4) HEDWIG\n");
+	scanf("%d",&ans);
+	if (ans==4)
+	{printf("    ---------------CONGRATS, %s YOU ANSWER IS CORRECT------------------\a\a\n\n\n\n\n\n\n\n\n\n",ch);
+ 			
+ 			system ("color E0");
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}	
+
+	
+	
+	
+	
+	if(y==11){		pag(p);
+	printf( " Which river flows through London?\n\n1)  THE DONTRIA\n\n2)  LONDON RIVER\n\n3)  THE MOESTRIA\n\n4)     The THAMES\n");
+	scanf("%d",&ans);
+			
+	if
+	(ans==4)
+{
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0");
+		}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+
+
+if(y==12){
+pag(p);printf("    What does Fred Flintstone wear around his neck?\n\n1)  TIE\n\n2)  GOLD CHAIN\n\n3)  SILVER CHAIN\n\n4)  MUFLER\n");
+   	scanf("%d",&ans);
+	   if(ans==1)
+	   { 	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");
+	   }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+	
+	
+if(y==13){pag(p);
+printf("      How many days are there in a fortnight?\n\n1)  40\n\n2)  14\n\n3) 44\n\n4)  4\n");
+   	scanf("%d",&ans);
+	   if(ans==2) {
+	     	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color A0");                    }else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+
+
+if(y==14){pag(p);
+printf("   From what tree do acorns come?\n\n1)  PINE\n\n2)  OAK\n\n3)  MANGO TREE\n\n4)  ORANGE TREE\n ");
+	scanf("%d",&ans);		
+		
+	if
+	(ans==2){
+	  	printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color D0"); 
+	}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}
+	
+	
+	
+	
+	
+	
+	
+	if(y==15){pag(p);
+printf("  Another name for a tidal wave is a? \n\n1)  WATER WAVE\n\n2)  NELOFER  \n\n3)  Tsunami\n\n4)  TIDAL MOTION    \n ");
+	scanf("%d",&ans);
+				
+	if
+	(ans==3){
+		printf("    ---------------CONGRATS , %s YOUR ANSWER IS CORRECT ---------------\a\a\n\n\n\n\n",ch);
+		system ("color E0");}else {printf("                  %s YOUR ANSWER IS INCORRECT ",ch);  system ("color C0");getch(); break;    }}		
+					
+
+	
+	
+	
+	
+	
+	
+	
+	
+}u=0;
+
+
+getch();printf("             ~~~~~~~~ CONGRATULATION %s YOU WON RS 15,000,00 ~~~~~~~~",ch);
+}
+
+
+if (g==3){printf("\n\n\n\n\n                         \n\n\n\n                         ******* GAME OVER *******\n                         ");}
+}
+
+
+}
+
+
+
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+	
+	return 0;
+}
